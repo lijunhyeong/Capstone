@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun intentReportCategory(){
         findViewById<Button>(R.id.homeButton).setOnClickListener {
-            val intentReportCategory = Intent(this, ReportCategory::class.java)
+            val intentReportCategory = Intent(this, MapActivity::class.java)
             startActivity(intentReportCategory)
         }
     }

@@ -3,9 +3,9 @@ package com.atob.capstone
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ReportCategory : AppCompatActivity() {
+class MapActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_report_category)
+        setContentView(R.layout.activity_map)
     }
 }
