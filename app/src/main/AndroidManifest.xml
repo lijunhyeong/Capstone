@@ -15,9 +15,11 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".MapActivity"
+            android:name=".ReportReceivedActivity"
             android:exported="false" />
-        <!-- 네이버 맵 앱 키 추가 -->
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" /> <!-- 네이버 맵 앱 키 추가 -->
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="vhrpt25kka" />
