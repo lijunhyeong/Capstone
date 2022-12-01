@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.atob.capstone">
 
+    <!-- 위치정보 사용을 위해 권한을 추가-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,7 +24,8 @@
             android:exported="false" />
         <activity
             android:name=".MapActivity"
-            android:exported="false" /> <!-- 네이버 맵 앱 키 추가 -->
+            android:exported="false" />
+        <!-- 네이버 맵 앱 키 추가 -->
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="vhrpt25kka" />
