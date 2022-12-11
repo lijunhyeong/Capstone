@@ -3,10 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.atob.capstone">
 
-    <!-- 위치정보 사용을 위해 권한을 추가-->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 인터넷 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--    정확한 위치    -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--    대략적인 위치    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--    갤러리 접근    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 카메라 접근 -->
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -20,15 +26,17 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".ReportReceivedActivity"
+            android:name=".report.ReportReceivedActivity"
             android:exported="false" />
         <activity
-            android:name=".MapActivity"
+            android:name=".map.view.MapActivity"
             android:exported="false" />
-        <!-- 네이버 맵 앱 키 추가 -->
+        <!-- 네이버 맵 앱 키 추가
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
-            android:value="vhrpt25kka" />
+            android:value="vhrpt25kka" />-->
+        <!-- 네이티브 앱 키 추가 -->
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="a1d7e23c00529d058994d6176f2ec94a" />
 
         <activity
             android:name=".MainActivity"

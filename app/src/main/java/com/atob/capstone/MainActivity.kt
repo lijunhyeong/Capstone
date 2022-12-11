@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.atob.capstone.map.view.MapActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         // intentReportReceived()
         intentReportCategory()
+
+        //getHashKey()
     }
 
     private fun intentReportCategory(){
