@@ -25,7 +25,6 @@ class MapActivity : AppCompatActivity()  {
     private lateinit var binding: ActivityMapBinding
     private val ACCESS_FINE_LOCATION = 1000     // Request Code
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMapBinding.inflate(layoutInflater)

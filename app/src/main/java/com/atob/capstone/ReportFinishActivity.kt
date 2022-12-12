@@ -1,5 +1,6 @@
 package com.atob.capstone
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -34,6 +35,7 @@ class ReportFinishActivity: AppCompatActivity() {
             else "신고접수가\n완료되었습니다.\n1분간 잠금을 해제합니다."
     }
 
+    @SuppressLint("SetTextI18n")
     private fun getData(){
         val processingMethod = intent.getStringExtra("processingMethod")
         val companyName = intent.getStringExtra("companyName")
@@ -42,12 +44,19 @@ class ReportFinishActivity: AppCompatActivity() {
         val uLatitude = intent.getStringExtra("uLatitude")      // 위도
         val uLongitude = intent.getStringExtra("uLongitude")    // 경도
 
-        Log.d("일시 ---> ","$currentDate")
+        binding.info.text = "일시: $currentDate\n" +
+                "분류: $selectCategory\n" +
+                "위도: $uLatitude\n" +
+                "경도: $uLongitude\n" +
+                "회사명: $companyName\n" +
+                "처리 방법: $processingMethod"
+
+        /*Log.d("일시 ---> ","$currentDate")
         Log.d("분류 ---> ","$selectCategory")
         Log.d("위도 ---> ","$uLatitude")
         Log.d("경도 ---> ","$uLongitude")
         Log.d("회사명 ---> ","$companyName")
-        Log.d("처리 방법 ---> ","$processingMethod")
+        Log.d("처리 방법 ---> ","$processingMethod")*/
     }
 
     private fun intentHome(){
