@@ -4,23 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".report.ReportReceivedActivity">
-
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:overScrollMode="never"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
+    android:background="@color/white"
+    tools:context=".report.view.ReportReceivedActivity">
 
     <TextView
         android:id="@+id/toolBar"
@@ -35,19 +20,44 @@
         app:layout_constraintTop_toTopOf="parent"
         android:textStyle="bold"/>
 
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
     <TextView
-        android:id="@+id/nowDate"
+        android:id="@+id/currentDateTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/toolBar"
-        app:layout_constraintTop_toBottomOf="@+id/toolBar"
-        tools:text="신고 일시: 2022-12-11 18시 30분 33초" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="신고 일시" />
+
+        <TextView
+            android:id="@+id/currentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/currentDateTextView"
+            app:layout_constraintTop_toBottomOf="@+id/currentDateTextView"
+            tools:text=" 2022-12-11 18시 30분 33초" />
 
     <TextView
         android:id="@+id/categoryTextView"
@@ -56,10 +66,10 @@
         android:layout_marginTop="15dp"
         android:text="신고 종류"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/nowDate"
-        app:layout_constraintTop_toBottomOf="@+id/nowDate" />
+        app:layout_constraintStart_toStartOf="@+id/currentDate"
+        app:layout_constraintTop_toBottomOf="@+id/currentDate" />
 
     <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
         android:id="@+id/category"
@@ -89,7 +99,7 @@
         android:layout_marginTop="15dp"
         android:text="사진 촬영 방법"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/category"
         app:layout_constraintTop_toBottomOf="@+id/category" />
@@ -107,14 +117,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1. 배경이 나오게 촬영해주세요."
+            android:textColor="@color/gray"
             android:textSize="15sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2. 로고를 자세히 촬영해주세요."
+            android:text="2. 브랜드명이 보이도록 촬영해주세요."
+            android:textColor="@color/gray"
             android:textSize="15sp" />
+
     </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/uploadPicture"
+        app:layout_constraintTop_toBottomOf="@id/uploadPicture" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -127,7 +152,7 @@
         android:background="@drawable/photo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/uploadPicture" />
+        app:layout_constraintTop_toBottomOf="@id/company" />
 
     <ImageView
         android:id="@+id/camera"
@@ -146,7 +171,7 @@
         android:layout_marginTop="15dp"
         android:text="처리 방법"
         android:textColor="@color/black"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />

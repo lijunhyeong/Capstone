@@ -9,10 +9,11 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <!--    대략적인 위치    -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <!--    갤러리 접근    -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <!-- 카메라 접근 -->
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -26,7 +27,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".report.ReportReceivedActivity"
+            android:name=".ReportFinishActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".report.view.ReportReceivedActivity"
             android:exported="false" />
         <activity
             android:name=".map.view.MapActivity"
@@ -47,6 +51,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 이미지 내부 저장소 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.atob.capstone.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
     </application>
 
 </manifest>

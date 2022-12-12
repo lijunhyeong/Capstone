@@ -15,7 +15,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.atob.capstone.report.ReportReceivedActivity
+import com.atob.capstone.report.view.ReportReceivedActivity
 import com.atob.capstone.databinding.ActivityMapBinding
 import com.atob.capstone.map.domain.CheckLocationService
 import net.daum.mf.map.api.MapView
@@ -24,8 +24,6 @@ class MapActivity : AppCompatActivity()  {
 
     private lateinit var binding: ActivityMapBinding
     private val ACCESS_FINE_LOCATION = 1000     // Request Code
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
