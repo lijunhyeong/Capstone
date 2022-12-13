@@ -12,10 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // intentReportReceived()
         intentReportCategory()
-
-        //getHashKey()
     }
 
     private fun intentReportCategory(){

@@ -38,11 +38,6 @@ class ReportReceivedActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        /*val ll = intent.getStringExtra("uLatitude")
-        val lolo = intent.getStringExtra("uLongitude")
-        Log.d("??uLatitude---", ll!!)
-        Log.d("??uLongitude---", lolo!!)*/
-
         initSetting()
         // 자전거, 킥보드 선택
         selectCategory()
