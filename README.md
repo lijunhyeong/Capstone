@@ -1,7 +1,7 @@
 # AI를 활용한 퍼스널 모빌리티 주차문제 해결
 
-## 📌 주제
-
+## 📌 Personal Mobility 란
+전기를 동력으로 하는 1인용 이동수단으로 전동 휠, 전동 킥보드, 전기 자전거, 초소형 전기차 등이 포함된다.
 
 ## 📌 프로젝트 개요
 퍼스널 모빌리티의 주차문제를 개선하기 위해 무분별하게 주차를 한 사람에게 패널티를 주고, 빠르게 대처할 수 있는 서비스 개발
@@ -37,7 +37,15 @@
 ## 📌 기대 효과
 <img src="https://user-images.githubusercontent.com/72978589/207212633-d44c5e28-ae88-4aa9-80ec-f0f882202499.png" width="70%" height="70%">   
 
+## 📌 어플리케이션 핵심 기능
 
+
+## 🛠 개발 환경 및 dependencies
+- Android Studio Chipmunk | 2021.2.1 Patch 2
+- Kotlin 1.7.10
+- kakao map api
+- button toggle group - nl.bryanderidder:themed-toggle-button-group:1.4.1
+- Naver AI Services &rarr; CLOVA OCR(인쇄물 속 글자를 추출하여 디지털 데이터로 변환해 주는 서비스)
 
 
 
