@@ -13,7 +13,7 @@ AI를 활용한 퍼스널 모빌리티(Personal Mobility) 주차문제 해결
 <img src="https://user-images.githubusercontent.com/72978589/207209102-f0aa2128-d757-42b2-94f0-c25d0d22c04e.png" width="60%" height="20%">    
 
 ## 📌 Personal Mobility 시장분석
-- 코로나19 이후, 개인형 이동수단 수요 증가
+### ✅ 코로나19 이후, 개인형 이동수단 수요 증가
 <img src="https://user-images.githubusercontent.com/72978589/207209383-3d055866-8196-41b1-9e8e-c4a0f4bb8576.png" width="40%" height="20%">   
 
 ### ✅ Personal Mobility 개인형 이동수단 SWOT 분석
