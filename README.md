@@ -57,7 +57,7 @@ AI를 활용한 퍼스널 모빌리티(Personal Mobility) 주차문제 해결
 ## 🛠 개발 환경 및 dependencies
 - Android Studio Chipmunk | 2021.2.1 Patch 2
 - Kotlin 1.7.10
-- kakao map api
+- kakao Map API
 - button toggle group - nl.bryanderidder:themed-toggle-button-group:1.4.1
 - Naver AI Services &rarr; CLOVA OCR(인쇄물 속 글자를 추출하여 디지털 데이터로 변환해 주는 서비스)
 
