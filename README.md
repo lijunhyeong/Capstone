@@ -43,7 +43,7 @@ AI 서비스를 활용한 퍼스널 모빌리티(Personal Mobility) 주차문제
 ### ✅ 기존의 해결책과 새로운 의견
 구청과 퍼스널 모빌리티 업체에서 여러차례 문제 해결을 시도했다. 공통된 점은 무단주차된 킥보드나 자전거를 시고하면 반드시 업체의 관계자나 구청 관계자가 출동하여 해결하는 것이었다. 이 방식은 신고 접수부터 처리까지 다소 시간이 소요되기 때문에 효과적인 해결방법이 아니었다.  
 따라서 통행에 방해가 되는 이동수단을 발견하는 즉시 업체로 신고 정보를 보내고 사용자가 직접 적당한 곳으로 옮기도록 업체에서 일시 잠금 해제를 하는 기능을 추가하고, 인근 현장운영팀이 바로 출동할 수 있는 서비스를 구상하였다. 
-<img src="https://user-images.githubusercontent.com/72978589/207935948-2e8319db-868a-4671-9145-60bbc586d696.png" width="40%" height="20%">   
+<img src="https://user-images.githubusercontent.com/72978589/207935948-2e8319db-868a-4671-9145-60bbc586d696.png" width="40%" height="30%">   
 
 ## 📌 핵심 아이디어
 <img src="https://user-images.githubusercontent.com/72978589/207936331-bd01c207-afec-40eb-9f0b-d191983f8289.png" width="80%" height="20%">
