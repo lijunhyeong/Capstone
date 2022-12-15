@@ -94,7 +94,7 @@ AI 서비스를 활용한 퍼스널 모빌리티(Personal Mobility) 주차문제
 - Kotlin 1.7.10
 - kakao Map API
 - button toggle group - nl.bryanderidder:themed-toggle-button-group:1.4.1
-- Naver AI Services &rarr; CLOVA OCR(인쇄물 속 글자를 추출하여 디지털 데이터로 변환해 주는 서비스)
+- Naver AI Services &rarr; CLOVA OCR
 
 
 
