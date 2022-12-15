@@ -1,7 +1,8 @@
 # 클린시티 (Clean City)
-<img src="https://user-images.githubusercontent.com/72978589/207939225-d3367162-391e-4243-bb28-3f967fdab870.jpg" width="30%" height="30%">    
-
+<img src="https://user-images.githubusercontent.com/72978589/207939225-d3367162-391e-4243-bb28-3f967fdab870.jpg" width="30%" height="30%"> 
+ 
 ## 📌 주제
+  
 AI 서비스를 활용한 퍼스널 모빌리티(Personal Mobility) 주차문제 해결
 
 ## 📌 Personal Mobility 란
