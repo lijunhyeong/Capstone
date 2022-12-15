@@ -82,6 +82,9 @@ AI 서비스를 활용한 퍼스널 모빌리티(Personal Mobility) 주차문제
 - 새로운 업체 추가되면 로고 구분할 수 있도록 코드 관리
 - 객체탐지로 자전거 or 킥보드 스스로 구분하는 기능 추가
 
+## 📌Display
+<img src="https://user-images.githubusercontent.com/72978589/207943985-3ccb4303-67e0-41c3-9173-17164058a9ba.gif" width="30%" height="20%">  
+
 ## 📌 ISSUE
 - 퍼스널 모빌리티에 있는 대부분의 회사명에 디자인이 들어가 있어 제대로 읽지 못한다.
 - [NetworkOnMainThreadException](https://github.com/lijunhyeong/Study/blob/main/Android/ISSUE/Thread%20%EA%B4%80%EB%A0%A8%20%EC%97%90%EB%9F%AC/NetworkOnMainThreadException.md) ERROR 발생   
