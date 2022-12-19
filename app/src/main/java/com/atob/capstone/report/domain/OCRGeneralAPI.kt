@@ -10,10 +10,8 @@ object OCRGeneralAPI {
 
     @JvmStatic
     fun ocrGeneralAPI(imageFile: String): String{
-//        val apiURL = "YOUR_API_URL"
-//        val secretKey = "YOUR_SECRET_KEY"
-        val apiURL = "https://02epycivzv.apigw.ntruss.com/custom/v1/19599/02a6ea8218911ceedb83149730f4fb80ae1e374664d4df28311117d0ba5f1a6f/general"
-        val secretKey = "a2d0RE95TEtGU2dWdUNxcmJQRGF0YnZWUE5IZFFZQk4="
+        val apiURL = "YOUR_API_URL"
+        val secretKey = "YOUR_SECRET_KEY"
 
         val personalMobility = listOf("Beam", "Lime", "고고씽", "DART", "SWING", "deer", "Lime", "beam", "씽씽", "ALPACA", "WIND", "elecle", "ZET", "GCOOTER", "G.BIKE", "KICKGOING", "플라워로드", "FLOWEROAD", "HIKICK", "이브이패스", "mate", "mate mercane", "kakao T bike", "TAZO", "쓩", "백원킥보드", "KICKS", "neuron", "BIRD", "MARY", "MARY bike")
 
