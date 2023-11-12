@@ -89,7 +89,7 @@ AI 서비스를 활용한 퍼스널 모빌리티(Personal Mobility) 주차문제
 
 ## 📌 ISSUE
 - 대부분의 퍼스널 모빌리티 회사명에 디자인이 들어가 있어 회사명을 제대로 읽지 못한다.
-- [NetworkOnMainThreadException](https://github.com/lijunhyeong/Study/blob/main/Android/ISSUE/Thread%20%EA%B4%80%EB%A0%A8%20%EC%97%90%EB%9F%AC/NetworkOnMainThreadException.md) ERROR 발생   
+- [NetworkOnMainThreadException](https://velog.io/@lijunhyeong/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-NetworkOnMainThreadException-%EC%97%90%EB%9F%AC) ERROR 발생   
 
 ## 🛠 개발 환경 및 dependencies
 - Android Studio Chipmunk | 2021.2.1 Patch 2
